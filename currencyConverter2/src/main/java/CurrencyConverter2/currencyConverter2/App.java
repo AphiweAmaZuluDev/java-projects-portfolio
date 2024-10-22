@@ -164,11 +164,9 @@ public class App
     	if (valueFromAPI instanceof Long) {
     	    Long longValue = (Long) valueFromAPI;
     	    Double doubleValue = longValue.doubleValue();
-    	    System.out.println("Converted value: " + doubleValue);
     	    result = doubleValue;
     	} else if (valueFromAPI instanceof Double) {
     	    Double doubleValue = (Double) valueFromAPI;
-    	    System.out.println("Value is already a Double: " + doubleValue);
     	    result = doubleValue;
     	} else {
     	    System.out.println("Unexpected value type: " + valueFromAPI.getClass().getName());
